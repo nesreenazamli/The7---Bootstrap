@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Contract</title>
+</head>
+
+<body>
+
+  <button onclick={topFunction()} id="topBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+  <!-- sub NavBar -->
+  <section class="bg-main pt-2 ">
+    <div class="subnav-conatiner d-flex justify-content-between text-light  reponsive-justify-content">
+      <div class="d-flex fw-bold">
+        <p>
+          <span class="mx-1"> <i class="bi bi-telephone-fill"></i></span>
+
+          011 322 44 56
+        </p>
+        <p>
+          <span class="mx-1"><i class="bi bi-geo-alt-fill"></i></span>
+
+          011 322 44 56 Highland St. Tonawanda, NY 14150
+        </p>
+      </div>
+      <div class="d-flex">
+
+        <div class="search">
+          <input class="search-txt" type="text" name="" placeholder="search">
+
+          <a class="search-btn" href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </div>
+        <div class="d-flex d-none d-lg-flex d-md-none ">
+          <div class="icon-border fs-12"> <i class="bi bi-facebook"></i></div>
+          <div class="icon-border fs-12"> <i class="bi bi-twitter"></i></div>
+          <div class="icon-border fs-12"> <i class="bi bi-google"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NavBar -->
+
+  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light py-0">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./Images/g-top.webp" alt="logo"></a>
+
+      <div class="d-flex align-items-center nav-responsive">
+
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-50 fw-bold text-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">dropdown link</a>
+                  <a class="dropdown-item" href="#">dropdown link</a>
+                  <a class="dropdown-item" href="#">dropdown link</a>
+                </div>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">dropdown link</a>
+                  <a class="dropdown-item" href="#">dropdown link</a>
+                  <a class="dropdown-item" href="#">dropdown link</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimmonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+        <div class="btn-container"> <button class="btn nav-btn fw-bold"> Start a project <i
+              class="bi bi-arrow-right-circle-fill mx-2"></i>
+          </button></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+
+  <div class="slideshow-container">
+    <div class="mySlides ">
+      <img src="./Images/img010.jpg">
+    </div>
+    <div class="mySlides ">
+      <img src="./Images/img020.jpg">
+    </div>
+    <div class="mySlides ">
+      <img src="./Images/img012.jpg">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+    <ol class="carousel-indicators">
+      <li onclick="currentSlide(1)" data-target="#carousel_testimonials" data-slide-to="0" class=" dot">
+          <img src="./Images/img010.jpg" width="74" height="74" alt="Osama" />
+      </li>
+      <li onclick="currentSlide(2)" data-target="#carousel_testimonials" data-slide-to="1" class="dot">
+          <img src="./Images/img020.jpg" width="74" height="74" alt="Hassan" />
+      </li>
+      <li  onclick="currentSlide(3)" data-target="#carousel_testimonials" data-slide-to="2" class="dot">
+          <img src="./Images/img012.jpg" width="74" height="74" alt="Hind" />
+      </li>
+  
+    </ol>
+  </div>
+
+
+
+
+  <!-- About Company -->
+
+  <section>
+    <div class="custom-container">
+      <h2 class="text-center mt-5 mb-4 fs-1 fw-bold"> About Our Company</h2>
+
+      <div class="d-flex justify-content-between w-100 company-mobile">
+        <div class="text-left w-50 company-left-mobile">
+          <h3 class="fw-bold">Who we are</h3>
+          <h5 class="text-color">Donec congue ut nibh et pharetra. In vehicula, nisl vitae porta placerat, quam eros
+            lacinia sem!</h5>
+          <p>Lostibulum quis euismod orci, eget scelerisque ante. Proin scelerisque feugiat libero id molestie. Praesent
+            rutrum arcu sit amet tempus suscipit – mollis molestie. Donec et tincidunt nulla, eget volutpat tempus
+            suscipitt lorem nulla dolor amet.
+
+          <ol>
+            <li>Donec cursus molesti et tincidunt nulla, eget volutpat tortor.</li>
+            <li>Praesent rutrum arcu sit amet tempus suscipitt auctor sit amet. </li>
+            <li>Proin scelerisque feugiat libero id molestie. Praesent rutrum!</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ol>
+          </p>
+
+          <button type="button" class="btn contact-btn mt-3">Contact us!</button>
+        </div>
+        <div class="company-img d-flex flex-wrap justify-content-end  company-right-mobile">
+          <img src="./Images/im001.jpg" alt="">
+          <img src="./Images/img010.jpg" alt="">
+          <img src="./Images/img012.jpg" alt="">
+          <img src="./Images/img020.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+  <!-- OUR SERVICES -->
+
+  <section>
+    <div class="container">
+      <h2></h2>
+      <div class="services-cards d-flex">
+        <div class="d-flex flex-column align-items-center w-30">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Web Development</h4>
+          <p class="text-center">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor
+            suscipit.</p>
+          <button type="button" class="btn service-btn mt-3">Details</button>
+        </div>
+        <div class="d-flex flex-column align-items-center mx-3 w-30">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Web Development</h4>
+          <p class="text-center">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor
+            suscipit.</p>
+          <button type="button" class="btn service-btn mt-3">Details</button>
+        </div>
+        <div class="d-flex flex-column align-items-center w-30">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Web Development</h4>
+          <p class="text-center">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor
+            suscipit.</p>
+          <button type="button" class="btn service-btn mt-3">Details</button>
+        </div>
+      </div>
+      <div class="services-cards d-flex mt-5 ">
+        <div class="d-flex flex-column align-items-center w-30">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Web Development</h4>
+          <p class="text-center">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor
+            suscipit.</p>
+          <button type="button" class="btn service-btn mt-3">Details</button>
+        </div>
+        <div class="d-flex flex-column align-items-center mx-3  w-30">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Web Development</h4>
+          <p class="text-center">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor
+            suscipit.</p>
+          <button type="button" class="btn service-btn mt-3">Details</button>
+        </div>
+        <div class="d-flex flex-column align-items-center w-30">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Web Development</h4>
+          <p class="text-center">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor
+            suscipit.</p>
+          <button type="button" class="btn service-btn mt-3">Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Quote -->
+  <section>
+    <div class="quote mt-5">
+      <div class="quote-container">
+        <q>There are no secrets to success. It is the result of preparation, hard work, and learning from failure.</q>
+        <p class="fw-bold">—</p>
+        <p class="fs-4">Colin Powell</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WORK WITH US -->
+
+  <section>
+    <div class="subnav-conatiner">
+      <h2 class="text-center mt-5 mb-4 fs-1 fw-bold">WHY WORK WITH US</h2>
+      <div class="d-flex work-mobile">
+        <img class="img" src="./Images/img010.jpg" alt="">
+
+        <div class="text-left mt-2">
+          <h3 class="fw-bold">12 years of experience</h3>
+          <h5 class="text-color">Nec condimentum est auctor sit amet – arcu sit amet tempus suscipit.</h5>
+          <p>Lorem stibulum quis euismod orci, eget scelerisque ante. Proin scelerisque feugiat libero id molestie.
+
+            Praesent rutrum arcu sit amet tempus suscipit. Praesent faucibus orci risus, nec condimentum est auctor sit
+            amet. Donec cursus felis in mollis molestie. Donec et tincidunt nulla, eget volutpat tortor.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex mt-5  work-mobile">
+        <img class="img" src="./Images/img010.jpg" alt="">
+
+        <div class="text-left mt-2">
+          <h3 class="fw-bold">12 years of experience</h3>
+          <h5 class="text-color">Nec condimentum est auctor sit amet – arcu sit amet tempus suscipit.</h5>
+          <p>Lorem stibulum quis euismod orci, eget scelerisque ante. Proin scelerisque feugiat libero id molestie.
+
+            Praesent rutrum arcu sit amet tempus suscipit. Praesent faucibus orci risus, nec condimentum est auctor sit
+            amet. Donec cursus felis in mollis molestie. Donec et tincidunt nulla, eget volutpat tortor.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex my-5  work-mobile">
+        <img class="img" src="./Images/img010.jpg" alt="">
+
+        <div class="text-left mt-2">
+          <h3 class="fw-bold">12 years of experience</h3>
+          <h5 class="text-color">Nec condimentum est auctor sit amet – arcu sit amet tempus suscipit.</h5>
+          <p>Lorem stibulum quis euismod orci, eget scelerisque ante. Proin scelerisque feugiat libero id molestie.
+
+            Praesent rutrum arcu sit amet tempus suscipit. Praesent faucibus orci risus, nec condimentum est auctor sit
+            amet. Donec cursus felis in mollis molestie. Donec et tincidunt nulla, eget volutpat tortor.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+  <hr>
+  <!-- TESTIMONIALS -->
+
+  <section>
+    <div class="subnav-conatiner">
+      <h2 class="text-center mt-5 mb-4 fs-1 fw-bold">TESTIMONIALS</h2>
+
+      <div class="test-container d-flex my-5">
+        <div class="text-content">
+          <p class="fs-5">
+            Lorem estibulum quis euismod orci, eget scelerisque ante. Proin scelerisque feugiat libero id molestie orci
+            risus, nec condimentum est auctor sit amet. Donec cursus felis in mollis molestie. Donec et tincidunt nulla,
+            eget volutpat tortor.</p>
+          <p>John Doe – regular customer</p>
+        </div>
+        <div class="text-content ms-5">
+          <p class="fs-5">
+            Lorem estibulum quis euismod orci, eget scelerisque ante. Proin scelerisque feugiat libero id molestie orci
+            risus, nec condimentum est auctor sit amet. Donec cursus felis in mollis molestie. Donec et tincidunt nulla,
+            eget volutpat tortor.</p>
+          <p>John Doe – regular customer</p>
+        </div>
+      </div>
+      <div class="test-container d-flex my-5">
+        <div class="text-content">
+          <p class="fs-5">
+            Lorem estibulum quis euismod orci, eget scelerisque ante. Proin scelerisque feugiat libero id molestie orci
+            risus, nec condimentum est auctor sit amet. Donec cursus felis in mollis molestie. Donec et tincidunt nulla,
+            eget volutpat tortor.</p>
+          <p>John Doe – regular customer</p>
+        </div>
+        <div class="text-content ms-5">
+          <p class="fs-5">
+            Lorem estibulum quis euismod orci, eget scelerisque ante. Proin scelerisque feugiat libero id molestie orci
+            risus, nec condimentum est auctor sit amet. Donec cursus felis in mollis molestie. Donec et tincidunt nulla,
+            eget volutpat tortor.</p>
+          <p>John Doe – regular customer</p>
+        </div>
+      </div>
+
+
+      <div class="d-flex justify-content-center"><button type="button" class="btn test-btn mt-3">Read more
+          testimonials</button></div>
+    </div>
+  </section>
+
+  <!--  Quote 2 -->
+  <section>
+    <div class="quote mt-5">
+      <div class="quote-container">
+        <q>If you really look closely, most overnight successes took a long time.</q>
+        <p class="fw-bold">—</p>
+        <p class="fs-4">Steve Jobs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR TEAM -->
+  <section>
+    <div class="subnav-conatiner">
+      <h2 class="text-center mt-5 mb-4 fs-1 fw-bold"> OUR TEAM </h2>
+      <div class="d-flex team-container">
+        <div class="d-flex flex-column align-items-center w-25">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Alex Green</h4>
+          <h5 class="fw-bold">Founder & CEO</h5>
+          <p class="text-center">Proin molestie vehicula malesuada. Donec consectetur lectus felis, vitae rutrum felis
+            faucibus vel. Nam fringilla non nisi ut consectetur.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center w-25">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Diana Richards</h4>
+          <h5 class="fw-bold">Manager</h5>
+          <p class="text-center">Proin molestie vehicula malesuada. Donec consectetur lectus felis, vitae rutrum felis
+            faucibus vel. Nam fringilla non nisi ut consectetur.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center w-25">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Richard Black</h4>
+          <h5 class="fw-bold">Marketing Expert</h5>
+          <p class="text-center">Proin molestie vehicula malesuada. Donec consectetur lectus felis, vitae rutrum felis
+            faucibus vel. Nam fringilla non nisi ut consectetur.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center w-25">
+          <img src="./Images/s000-300x300.jpg" alt="">
+          <h4 class="my-3 fw-bold">Miriam Swift</h4>
+          <h5 class="fw-bold">Account Manager</h5>
+          <p class="text-center">Proin molestie vehicula malesuada. Donec consectetur lectus felis, vitae rutrum felis
+            faucibus vel. Nam fringilla non nisi ut consectetur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class=" d-flex justify-content-around pt-5 responsive-footer">
+      <div class="w-30 mt-2 w-control">
+        <img src="./Images/image-footer-g.webp" alt="">
+        <p class="text-light my-2 fs-5">Nam id sem quis mauris porttitor conse quat id vitae dolor – mauris lorem ipsum
+          nulla it amet ultricies mi dolor at pharetra.</p>
+        <button class="btn test-btn mt-3">Get in touch!</button>
+      </div>
+
+      <div class="text-light  w-30 mt-2 w-control">
+
+        <h5 class="fw-bold mb-4">Contact info</h5>
+        <p class="my-3 footer-text"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. </p>
+
+        <p class=""> Phone number</p>
+        <p class="footer-text"> +001 234 56 78</p>
+
+        <p class=""> Email</p>
+        <p class="footer-text">hello@dream-theme.com</p>
+
+        <p class=""> Address</p>
+        <p class="footer-text">Highland St. Tonawanda, NY 14150</p>
+
+        <div class="d-flex d-none d-lg-flex d-md-none ">
+          <div class="footer-icon fs-12"> <i class="bi bi-facebook icons"></i></div>
+          <div class="footer-icon fs-12"> <i class="bi bi-twitter icons"></i></div>
+          <div class="footer-icon fs-12"> <i class="bi bi-google icons"></i></div>
+        </div>
+      </div>
+
+
+      <div class="w-30 mt-2 w-control">
+
+        <h5 class="text-light fw-bold mb-4">Recent posts</h5>
+
+        <div>
+          <div class="d-flex">
+            <img class="footer-article-img" src="./Images/im001.jpg" alt="">
+            <div class="ms-2">
+              <p class="text-light my-0">Glavrida sit amet – post with side images</p>
+              <p class="footer-text my-0"> 16th November 2018</p>
+            </div>
+          </div>
+          <div class="d-flex mt-4">
+            <img class="footer-article-img" src="./Images/im001.jpg" alt="">
+            <div class="ms-2">
+              <p class="text-light my-0">Glavrida sit amet – post with side images</p>
+              <p class="footer-text my-0"> 16th November 2018</p>
+            </div>
+          </div>
+          <div class="d-flex mt-4">
+            <img class="footer-article-img " src="./Images/im001.jpg" alt="">
+            <div class="ms-2">
+              <p class="text-light my-0">Glavrida sit amet – post with side images</p>
+              <p class="footer-text my-0"> 16th November 2018</p>
+            </div>
+          </div>
+          <div class="d-flex mt-4">
+            <img class="footer-article-img" src="./Images/im001.jpg" alt="">
+            <div class="ms-2">
+              <p class="text-light my-0">Glavrida sit amet – post with side images</p>
+              <p class="footer-text my-0"> 16th November 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="footer-border footer-text">
+      <img src="./Images/l-b-s.webp" alt="">
+      <p>© The7 Gutenberg Business - 2018-2019. All rights reserved.</p>
+
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
